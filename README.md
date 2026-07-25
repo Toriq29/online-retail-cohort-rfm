@@ -60,14 +60,14 @@ Project ini menjawab dua pertanyaan utama:
 ## Key Findings
 
 ### 🔥 Cohort Retention Heatmap
-![Cohort Retention Heatmap](visualizations/cohort_retention.png)
+![Cohort Retention Heatmap](visualizations/cohort.png)
 
 <!-- TODO: 2-3 kalimat insight, contoh:
 "Retention rate turun tajam ~40% pada bulan ke-2 setelah pembelian pertama, 
 menandakan window kritis untuk re-engagement ada di 30-60 hari pertama." -->
 
 ### 🎯 RFM Customer Segments
-![RFM Segmentation](visualizations/rfm_segments.png)
+![RFM Segmentation](visualizations/rfm.png)
 
 <!-- TODO: 2-3 kalimat insight, contoh:
 "X% customer masuk kategori 'Champions' namun berkontribusi Y% dari total revenue,
