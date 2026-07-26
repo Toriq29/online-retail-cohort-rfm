@@ -34,9 +34,9 @@ Project ini menjawab dua pertanyaan utama:
 ## Dataset
 
 - **Sumber:** [UCI Machine Learning Repository — Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii)
-- **Periode:** <!-- TODO: contoh Des 2009 – Des 2011 -->
+- **Periode:** Desember 2009 – Desember 2011 (24 bulan)
 - **Jumlah transaksi:** <!-- TODO -->
-- **Jumlah unique customer:** <!-- TODO -->
+- **Jumlah unique customer:** 5,878
 - **Cakupan:** Transaksi online retail berbasis UK, mencakup invoice, produk, quantity, harga, dan customer ID.
 
 ## Methodology
@@ -60,25 +60,29 @@ Project ini menjawab dua pertanyaan utama:
 ## Key Findings
 
 ### 🔥 Cohort Retention Heatmap
-![Cohort Retention Heatmap](visualization/cohort.png)
+![Cohort Retention Heatmap](visualizations/cohort_retention.png)
 
-<!-- TODO: 2-3 kalimat insight, contoh:
-"Retention rate turun tajam ~40% pada bulan ke-2 setelah pembelian pertama, 
-menandakan window kritis untuk re-engagement ada di 30-60 hari pertama." -->
+Retention mengalami **churn cliff** yang tajam pada bulan pertama: dari 24 cohort bulanan (Des 2009–Des 2011), rata-rata hanya **21% customer** yang kembali bertransaksi di bulan ke-1 setelah pembelian pertama — artinya **~79% customer hilang** hanya dalam satu bulan. Setelah melewati titik kritis ini, retention rate cenderung stabil di kisaran 15-30% untuk core customer yang bertahan, dengan fluktuasi lebih tinggi pada bulan-bulan akhir akibat mengecilnya ukuran sampel cohort.
+
+**Implikasi:** window re-engagement paling krusial ada di **30 hari pertama** setelah pembelian awal — di sinilah intervensi (onboarding email, follow-up promo) punya dampak terbesar terhadap retention jangka panjang.
 
 ### 🎯 RFM Customer Segments
-![RFM Segmentation](visualization/rfm.png)
+![RFM Segmentation](visualizations/rfm_segments.png)
 
-<!-- TODO: 2-3 kalimat insight, contoh:
-"X% customer masuk kategori 'Champions' namun berkontribusi Y% dari total revenue,
-sementara segment 'At Risk' mencakup Z% customer yang berisiko churn dalam 30 hari." -->
+Dari total **5,878 customer**, segmentasi menunjukkan pola tipikal retail: **Champions** adalah segment terbesar (~22% dari customer base, ≈1,299 customer), diikuti **Lost Customers** (~15%, ≈897 customer) — basis loyal yang cukup kuat, namun juga porsi signifikan customer yang sudah churn total. Segment **At Risk** (~6%, ≈362 customer) masih punya peluang diselamatkan lebih cepat dibanding yang sudah masuk kategori Lost.
+
+Distribusi RFM juga sangat *right-skewed*: **99% customer** melakukan transaksi di bawah 50 kali (Frequency) dan spending terkonsentrasi di bin terendah (Monetary), menandakan mayoritas adalah occasional buyer sementara segelintir *"whale customer"* mendominasi volume — pola klasik yang jadi alasan RFM scoring memakai skor persentil/quintile, bukan nilai mentah, agar tidak bias ke outlier.
+
+<!-- CATATAN: angka segment di atas adalah estimasi (total sum ÷ rata-rata Customer ID), karena chart Tableau masih pakai agregasi Sum bukan Count. Disarankan fix agregasi ke COUNTD di Tableau lalu update angka final di sini. -->
+<!-- TODO: crop watermark "Activate Windows" dari screenshot sebelum upload final -->
+
 
 ## Business Recommendations
 
-<!-- TODO: sesuaikan dengan findings aktual, contoh format: -->
-1. **Segment "At Risk"** (X% dari customer base) → luncurkan win-back campaign dengan diskon personal dalam 30 hari sejak inactivity terdeteksi.
-2. **Segment "Champions"** → prioritaskan untuk loyalty program / early access produk baru, karena berkontribusi terbesar terhadap revenue.
-3. **Cohort onboarding** → perkuat komunikasi (email/push notif) di 60 hari pertama, karena periode ini adalah titik kritis retention.
+1. **Perkuat onboarding di 30 hari pertama** — dengan 79% customer churn setelah bulan pertama, prioritaskan email sequence / follow-up promo otomatis segera setelah first purchase, bukan menunggu tanda-tanda inactivity muncul.
+2. **Segment "At Risk"** (~6% dari customer base, ≈362 customer) → luncurkan win-back campaign dengan diskon personal sebelum mereka jatuh ke kategori "Lost".
+3. **Segment "Champions"** (~22% dari customer base, ≈1,299 customer) → prioritaskan untuk loyalty program / early access produk baru, mengingat kontribusinya paling besar terhadap revenue.
+4. **Mayoritas customer (99%) adalah occasional buyer** (frequency rendah) → fokuskan strategi akuisisi-ke-repeat melalui targeted promo pasca pembelian pertama, alih-alih menunggu mereka jadi frequent buyer secara organik.
 
 ## Tech Stack
 
