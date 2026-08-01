@@ -77,18 +77,18 @@ RFM Segmentation adalah metode untuk mengelompokkan pelanggan berdasarkan perila
 
 | Segment | Description |
 |---------|-------------|
-| 🏆 **Champions** | Pelanggan terbaik dengan transaksi terbaru, frekuensi tinggi, dan total pembelian tinggi. |
-| ❤️ **Loyal Customers** | Pelanggan yang sering bertransaksi dan secara konsisten memberikan kontribusi terhadap pendapatan. |
-| 🌱 **Potential Loyalists** | Pelanggan yang mulai aktif bertransaksi dan memiliki potensi menjadi pelanggan loyal. |
-| 🆕 **New Customers** | Pelanggan yang baru melakukan pembelian pertama. |
-| ✨ **Promising** | Pelanggan baru dengan frekuensi transaksi yang masih rendah namun berpotensi berkembang. |
-| 🚨 **At Risk** | Pelanggan yang sebelumnya aktif tetapi sudah cukup lama tidak melakukan transaksi. |
-| ⚠️ **Need Attention** | Pelanggan dengan aktivitas yang mulai menurun dan memerlukan perhatian agar tetap aktif. |
-| ❌ **Lost Customers** | Pelanggan yang sudah lama tidak bertransaksi dan memiliki kemungkinan kecil untuk kembali. |
-| 👥 **Regular Customers** | Pelanggan dengan frekuensi dan nilai pembelian yang cukup baik, namun belum termasuk pelanggan loyal. |
-| 💰 **Big Spenders** | Pelanggan dengan nilai pembelian tinggi, tetapi frekuensi transaksi masih relatif rendah. |
-| 📦 **Others** | Pelanggan yang tidak memenuhi kriteria segmentasi di atas. |
-
+| 🏆 **Champions** | Pelanggan paling bernilai dengan transaksi terbaru, frekuensi pembelian tinggi, dan total pengeluaran terbesar. |
+| ❤️ **Loyal Customers** | Pelanggan yang rutin melakukan pembelian dan memberikan kontribusi pendapatan secara konsisten. |
+| 🌱 **Potential Loyalists** | Pelanggan yang masih relatif baru tetapi mulai menunjukkan frekuensi dan nilai transaksi yang baik sehingga berpotensi menjadi pelanggan loyal. |
+| 🆕 **New Customers** | Pelanggan yang baru pertama kali melakukan pembelian dan masih memerlukan proses engagement. |
+| ✨ **Promising** | Pelanggan baru dengan aktivitas awal yang menjanjikan, namun frekuensi transaksi masih rendah. |
+| ⚠️ **Need Attention** | Pelanggan yang mulai mengurangi aktivitas pembelian sehingga perlu diberikan perhatian melalui promosi atau komunikasi ulang. |
+| 😴 **About to Sleep** | Pelanggan yang sudah cukup lama tidak melakukan transaksi dan berisiko menjadi tidak aktif. |
+| 🚨 **At Risk** | Pelanggan yang sebelumnya aktif tetapi kini mulai jarang bertransaksi sehingga berpotensi berhenti menjadi pelanggan. |
+| 💎 **Can't Lose Them** | Pelanggan bernilai tinggi dengan riwayat pembelian yang sangat baik, tetapi sudah lama tidak kembali bertransaksi sehingga menjadi prioritas utama untuk dipertahankan. |
+| 🛌 **Hibernating** | Pelanggan dengan aktivitas, frekuensi, dan nilai transaksi yang rendah sehingga hampir tidak lagi berinteraksi dengan bisnis. |
+| ❌ **Lost Customers** | Pelanggan yang kemungkinan besar telah berhenti bertransaksi dan memiliki peluang kecil untuk kembali tanpa strategi reaktivasi khusus. |
+Kenapa v
 
 ## Key Findings
 
