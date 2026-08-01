@@ -88,7 +88,6 @@ RFM Segmentation adalah metode untuk mengelompokkan pelanggan berdasarkan perila
 | 💎 **Can't Lose Them** | Pelanggan bernilai tinggi dengan riwayat pembelian yang sangat baik, tetapi sudah lama tidak kembali bertransaksi sehingga menjadi prioritas utama untuk dipertahankan. |
 | 🛌 **Hibernating** | Pelanggan dengan aktivitas, frekuensi, dan nilai transaksi yang rendah sehingga hampir tidak lagi berinteraksi dengan bisnis. |
 | ❌ **Lost Customers** | Pelanggan yang kemungkinan besar telah berhenti bertransaksi dan memiliki peluang kecil untuk kembali tanpa strategi reaktivasi khusus. |
-Kenapa v
 
 ## Key Findings
 
