@@ -54,7 +54,9 @@ Project ini menjawab dua pertanyaan utama:
 - **Recency:** Berapa lama sejak transaksi terakhir
 - **Frequency:** Seberapa sering customer bertransaksi
 - **Monetary:** Total nilai pembelian
-- Scoring tiap dimensi (1-5) → dikombinasikan jadi segment (contoh: *Champions*, *At Risk*, *Loyal Customers*, *Lost*)
+- Scoring tiap dimensi :
+  1. 🏆 Champions : Pelanggan yang baru saja bertransaksi (Recency tinggi), sering membeli (Frequency tinggi), dan memiliki total pengeluaran besar (Monetary tinggi). Mereka adalah pelanggan paling bernilai.
+  2. ❤️ Loyal Customers : Pelanggan yang rutin berbelanja dan memiliki frekuensi transaksi tinggi. Meskipun nilai belanja tidak selalu paling besar, mereka konsisten memberikan kontribusi terhadap pendapatan. 
 
 ## Key Findings
 
