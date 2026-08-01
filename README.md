@@ -73,38 +73,21 @@ RFM Segmentation adalah metode untuk mengelompokkan pelanggan berdasarkan perila
 | **Frequency (F)** | Seberapa sering pelanggan melakukan transaksi. Semakin tinggi nilainya, semakin baik. |
 | **Monetary (M)** | Total nilai pembelian pelanggan. Semakin besar nilainya, semakin bernilai bagi bisnis. |
 
-### Customer Segments
+#### Customer Segments
 
 | Segment | Description |
 |---------|-------------|
-| 🏆 **Champions** | Pelanggan terbaik yang baru bertransaksi, sering membeli, dan memiliki nilai pembelian tinggi. |
-| ❤️ **Loyal Customers** | Pelanggan yang rutin berbelanja dan memberikan kontribusi pendapatan secara konsisten. |
-| 🌱 **Potential Loyalists** | Pelanggan yang mulai aktif berbelanja dan memiliki potensi menjadi pelanggan loyal. |
+| 🏆 **Champions** | Pelanggan terbaik dengan transaksi terbaru, frekuensi tinggi, dan total pembelian tinggi. |
+| ❤️ **Loyal Customers** | Pelanggan yang sering bertransaksi dan secara konsisten memberikan kontribusi terhadap pendapatan. |
+| 🌱 **Potential Loyalists** | Pelanggan yang mulai aktif bertransaksi dan memiliki potensi menjadi pelanggan loyal. |
 | 🆕 **New Customers** | Pelanggan yang baru melakukan pembelian pertama. |
-| ✨ **Promising** | Pelanggan baru dengan frekuensi dan nilai transaksi yang masih rendah, namun memiliki potensi berkembang. |
-| ⚠️ **Need Attention** | Pelanggan yang mulai jarang bertransaksi dan memerlukan perhatian agar tetap aktif. |
-| 😴 **About to Sleep** | Pelanggan yang aktivitas transaksinya mulai menurun dan berisiko tidak kembali. |
-| 🚨 **At Risk** | Pelanggan yang sebelumnya aktif tetapi sudah lama tidak melakukan pembelian. |
-| 💎 **Can't Lose Them** | Pelanggan bernilai tinggi yang sudah lama tidak aktif. Kehilangan mereka dapat berdampak signifikan pada bisnis. |
-| 🛌 **Hibernating** | Pelanggan dengan frekuensi dan nilai transaksi rendah yang hampir tidak lagi aktif. |
-| ❌ **Lost Customers** | Pelanggan yang kemungkinan besar telah berhenti berbelanja atau berpindah ke kompetitor. |
-
-<br>
-<br>
-
-| Segment             | Recency | Frequency | Monetary |
-| ------------------- | :-----: | :-------: | :------: |
-| Champions           |  ⭐⭐⭐⭐⭐  |   ⭐⭐⭐⭐⭐   |   ⭐⭐⭐⭐⭐  |
-| Loyal Customers     |   ⭐⭐⭐⭐  |   ⭐⭐⭐⭐⭐   |   ⭐⭐⭐⭐   |
-| Potential Loyalists |  ⭐⭐⭐⭐⭐  |    ⭐⭐⭐    |    ⭐⭐⭐   |
-| New Customers       |  ⭐⭐⭐⭐⭐  |     ⭐     |     ⭐    |
-| Promising           |   ⭐⭐⭐⭐  |     ⭐     |    ⭐⭐    |
-| Need Attention      |    ⭐⭐   |    ⭐⭐⭐    |    ⭐⭐⭐   |
-| About to Sleep      |    ⭐⭐   |     ⭐⭐    |    ⭐⭐    |
-| At Risk             |    ⭐    |    ⭐⭐⭐⭐   |   ⭐⭐⭐⭐   |
-| Can't Lose Them     |    ⭐    |   ⭐⭐⭐⭐⭐   |   ⭐⭐⭐⭐⭐  |
-| Hibernating         |    ⭐    |     ⭐⭐    |    ⭐⭐    |
-| Lost Customers      |    ⭐    |     ⭐     |     ⭐    |
+| ✨ **Promising** | Pelanggan baru dengan frekuensi transaksi yang masih rendah namun berpotensi berkembang. |
+| 🚨 **At Risk** | Pelanggan yang sebelumnya aktif tetapi sudah cukup lama tidak melakukan transaksi. |
+| ⚠️ **Need Attention** | Pelanggan dengan aktivitas yang mulai menurun dan memerlukan perhatian agar tetap aktif. |
+| ❌ **Lost Customers** | Pelanggan yang sudah lama tidak bertransaksi dan memiliki kemungkinan kecil untuk kembali. |
+| 👥 **Regular Customers** | Pelanggan dengan frekuensi dan nilai pembelian yang cukup baik, namun belum termasuk pelanggan loyal. |
+| 💰 **Big Spenders** | Pelanggan dengan nilai pembelian tinggi, tetapi frekuensi transaksi masih relatif rendah. |
+| 📦 **Others** | Pelanggan yang tidak memenuhi kriteria segmentasi di atas. |
 
 
 ## Key Findings
