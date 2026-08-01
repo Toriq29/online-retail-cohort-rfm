@@ -51,21 +51,31 @@ Project ini menjawab dua pertanyaan utama:
 - Visualisasi heatmap retention untuk melihat pola drop-off
 
 ### 3. RFM Segmentation
-- **Recency:** Berapa lama sejak transaksi terakhir
-- **Frequency:** Seberapa sering customer bertransaksi
-- **Monetary:** Total nilai pembelian
-- Scoring tiap dimensi :
-  1. 🏆 Champions : Pelanggan yang baru saja bertransaksi (Recency tinggi), sering membeli (Frequency tinggi), dan memiliki total pengeluaran besar (Monetary tinggi). Mereka adalah pelanggan paling bernilai.
-  2. ❤️ Loyal Customers : Pelanggan yang rutin berbelanja dan memiliki frekuensi transaksi tinggi. Meskipun nilai belanja tidak selalu paling besar, mereka konsisten memberikan kontribusi terhadap pendapatan.
-  3. 🌱 Potential Loyalists : Pelanggan yang baru mulai aktif berbelanja dan menunjukkan potensi menjadi pelanggan loyal di masa depan.
-  4. 🆕 New Customers : Pelanggan yang baru pertama kali melakukan pembelian. Belum memiliki riwayat transaksi yang cukup untuk dinilai loyal.
-  5. ✨ Promising : Pelanggan yang baru membeli tetapi frekuensi dan nilai transaksinya masih rendah. Mereka memiliki peluang berkembang jika diberi dorongan.
-  6. ⚠️ Need Attention : Pelanggan yang mulai jarang bertransaksi dibanding sebelumnya. Jika tidak segera ditindaklanjuti, mereka berpotensi berhenti menjadi pelanggan.
-  7. 😴 About to Sleep : Pelanggan yang sudah cukup lama tidak melakukan pembelian dan aktivitasnya mulai menurun.
-  8. 🚨 At Risk : Pelanggan yang sebelumnya aktif dan cukup sering bertransaksi, tetapi sudah lama tidak kembali membeli.
-  9. 💎 Can't Lose Them : Pelanggan bernilai tinggi yang dahulu sering bertransaksi dan memiliki pengeluaran besar, tetapi kini sudah lama tidak aktif. Kehilangan mereka akan berdampak besar pada pendapatan.
-  10. 🛌 Hibernating : Pelanggan yang sudah lama tidak bertransaksi, frekuensi rendah, dan nilai pembelian kecil. Mereka masih ada dalam database tetapi hampir tidak aktif.
-  11. ❌ Lost Customers : Pelanggan yang sudah sangat lama tidak melakukan pembelian dan memiliki aktivitas maupun nilai transaksi yang rendah. Kemungkinan besar mereka telah berpindah ke kompetitor atau tidak lagi tertarik.
+## 📊 RFM Segmentation
+
+RFM Segmentation adalah metode untuk mengelompokkan pelanggan berdasarkan perilaku pembelian mereka menggunakan tiga metrik utama:
+
+| Metric | Description |
+|--------|-------------|
+| **Recency (R)** | Berapa lama sejak pelanggan melakukan transaksi terakhir. Semakin kecil nilainya, semakin baik. |
+| **Frequency (F)** | Seberapa sering pelanggan melakukan transaksi. Semakin tinggi nilainya, semakin baik. |
+| **Monetary (M)** | Total nilai pembelian pelanggan. Semakin besar nilainya, semakin bernilai bagi bisnis. |
+
+### Customer Segments
+
+| Segment | Description |
+|---------|-------------|
+| 🏆 **Champions** | Pelanggan terbaik yang baru bertransaksi, sering membeli, dan memiliki nilai pembelian tinggi. |
+| ❤️ **Loyal Customers** | Pelanggan yang rutin berbelanja dan memberikan kontribusi pendapatan secara konsisten. |
+| 🌱 **Potential Loyalists** | Pelanggan yang mulai aktif berbelanja dan memiliki potensi menjadi pelanggan loyal. |
+| 🆕 **New Customers** | Pelanggan yang baru melakukan pembelian pertama. |
+| ✨ **Promising** | Pelanggan baru dengan frekuensi dan nilai transaksi yang masih rendah, namun memiliki potensi berkembang. |
+| ⚠️ **Need Attention** | Pelanggan yang mulai jarang bertransaksi dan memerlukan perhatian agar tetap aktif. |
+| 😴 **About to Sleep** | Pelanggan yang aktivitas transaksinya mulai menurun dan berisiko tidak kembali. |
+| 🚨 **At Risk** | Pelanggan yang sebelumnya aktif tetapi sudah lama tidak melakukan pembelian. |
+| 💎 **Can't Lose Them** | Pelanggan bernilai tinggi yang sudah lama tidak aktif. Kehilangan mereka dapat berdampak signifikan pada bisnis. |
+| 🛌 **Hibernating** | Pelanggan dengan frekuensi dan nilai transaksi rendah yang hampir tidak lagi aktif. |
+| ❌ **Lost Customers** | Pelanggan yang kemungkinan besar telah berhenti berbelanja atau berpindah ke kompetitor. |
  
 | Segment             | Recency | Frequency | Monetary |
 | ------------------- | :-----: | :-------: | :------: |
