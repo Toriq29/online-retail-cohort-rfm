@@ -56,7 +56,31 @@ Project ini menjawab dua pertanyaan utama:
 - **Monetary:** Total nilai pembelian
 - Scoring tiap dimensi :
   1. 🏆 Champions : Pelanggan yang baru saja bertransaksi (Recency tinggi), sering membeli (Frequency tinggi), dan memiliki total pengeluaran besar (Monetary tinggi). Mereka adalah pelanggan paling bernilai.
-  2. ❤️ Loyal Customers : Pelanggan yang rutin berbelanja dan memiliki frekuensi transaksi tinggi. Meskipun nilai belanja tidak selalu paling besar, mereka konsisten memberikan kontribusi terhadap pendapatan. 
+  2. ❤️ Loyal Customers : Pelanggan yang rutin berbelanja dan memiliki frekuensi transaksi tinggi. Meskipun nilai belanja tidak selalu paling besar, mereka konsisten memberikan kontribusi terhadap pendapatan.
+  3. 🌱 Potential Loyalists : Pelanggan yang baru mulai aktif berbelanja dan menunjukkan potensi menjadi pelanggan loyal di masa depan.
+  4. 🆕 New Customers : Pelanggan yang baru pertama kali melakukan pembelian. Belum memiliki riwayat transaksi yang cukup untuk dinilai loyal.
+  5. ✨ Promising : Pelanggan yang baru membeli tetapi frekuensi dan nilai transaksinya masih rendah. Mereka memiliki peluang berkembang jika diberi dorongan.
+  6. ⚠️ Need Attention : Pelanggan yang mulai jarang bertransaksi dibanding sebelumnya. Jika tidak segera ditindaklanjuti, mereka berpotensi berhenti menjadi pelanggan.
+  7. 😴 About to Sleep : Pelanggan yang sudah cukup lama tidak melakukan pembelian dan aktivitasnya mulai menurun.
+  8. 🚨 At Risk : Pelanggan yang sebelumnya aktif dan cukup sering bertransaksi, tetapi sudah lama tidak kembali membeli.
+  9. 💎 Can't Lose Them : Pelanggan bernilai tinggi yang dahulu sering bertransaksi dan memiliki pengeluaran besar, tetapi kini sudah lama tidak aktif. Kehilangan mereka akan berdampak besar pada pendapatan.
+  10. 🛌 Hibernating : Pelanggan yang sudah lama tidak bertransaksi, frekuensi rendah, dan nilai pembelian kecil. Mereka masih ada dalam database tetapi hampir tidak aktif.
+  11. ❌ Lost Customers : Pelanggan yang sudah sangat lama tidak melakukan pembelian dan memiliki aktivitas maupun nilai transaksi yang rendah. Kemungkinan besar mereka telah berpindah ke kompetitor atau tidak lagi tertarik.
+ 
+| Segment             | Recency | Frequency | Monetary |
+| ------------------- | :-----: | :-------: | :------: |
+| Champions           |  ⭐⭐⭐⭐⭐  |   ⭐⭐⭐⭐⭐   |   ⭐⭐⭐⭐⭐  |
+| Loyal Customers     |   ⭐⭐⭐⭐  |   ⭐⭐⭐⭐⭐   |   ⭐⭐⭐⭐   |
+| Potential Loyalists |  ⭐⭐⭐⭐⭐  |    ⭐⭐⭐    |    ⭐⭐⭐   |
+| New Customers       |  ⭐⭐⭐⭐⭐  |     ⭐     |     ⭐    |
+| Promising           |   ⭐⭐⭐⭐  |     ⭐     |    ⭐⭐    |
+| Need Attention      |    ⭐⭐   |    ⭐⭐⭐    |    ⭐⭐⭐   |
+| About to Sleep      |    ⭐⭐   |     ⭐⭐    |    ⭐⭐    |
+| At Risk             |    ⭐    |    ⭐⭐⭐⭐   |   ⭐⭐⭐⭐   |
+| Can't Lose Them     |    ⭐    |   ⭐⭐⭐⭐⭐   |   ⭐⭐⭐⭐⭐  |
+| Hibernating         |    ⭐    |     ⭐⭐    |    ⭐⭐    |
+| Lost Customers      |    ⭐    |     ⭐     |     ⭐    |
+
 
 ## Key Findings
 
