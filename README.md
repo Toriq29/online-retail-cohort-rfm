@@ -51,7 +51,6 @@ Project ini menjawab dua pertanyaan utama:
 - Visualisasi heatmap retention untuk melihat pola drop-off
 
 ### 3. RFM Segmentation
-## 📊 RFM Segmentation
 
 RFM Segmentation adalah metode untuk mengelompokkan pelanggan berdasarkan perilaku pembelian mereka menggunakan tiga metrik utama:
 
@@ -76,6 +75,7 @@ RFM Segmentation adalah metode untuk mengelompokkan pelanggan berdasarkan perila
 | 💎 **Can't Lose Them** | Pelanggan bernilai tinggi yang sudah lama tidak aktif. Kehilangan mereka dapat berdampak signifikan pada bisnis. |
 | 🛌 **Hibernating** | Pelanggan dengan frekuensi dan nilai transaksi rendah yang hampir tidak lagi aktif. |
 | ❌ **Lost Customers** | Pelanggan yang kemungkinan besar telah berhenti berbelanja atau berpindah ke kompetitor. |
+
  
 | Segment             | Recency | Frequency | Monetary |
 | ------------------- | :-----: | :-------: | :------: |
