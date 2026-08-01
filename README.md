@@ -77,6 +77,7 @@ RFM Segmentation adalah metode untuk mengelompokkan pelanggan berdasarkan perila
 | ❌ **Lost Customers** | Pelanggan yang kemungkinan besar telah berhenti berbelanja atau berpindah ke kompetitor. |
 
 <br>
+<br>
 
 | Segment             | Recency | Frequency | Monetary |
 | ------------------- | :-----: | :-------: | :------: |
