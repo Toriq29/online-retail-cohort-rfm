@@ -35,7 +35,8 @@ Project ini menjawab dua pertanyaan utama:
 
 - **Sumber:** [UCI Machine Learning Repository — Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii)
 - **Periode:** Desember 2009 – Desember 2011 (24 bulan)
-- **Jumlah transaksi & unique customer:** 805,549
+- **Jumlah transaksi:** 36,969
+- **Unique customer:** 5,878
 - **Cakupan:** Transaksi online retail berbasis UK, mencakup invoice, produk, quantity, harga, dan customer ID.
 
 ## Methodology
