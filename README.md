@@ -41,14 +41,27 @@ Project ini menjawab dua pertanyaan utama:
 ## Methodology
 
 ### 1. Data Cleaning
-- Menghapus transaksi dengan `CustomerID` null
-- Menghapus cancelled orders (invoice berawalan 'C')
-- Menangani outlier pada quantity & harga negatif
+
+Tahap awal dilakukan untuk memastikan kualitas data sebelum proses analisis.
+
+- Menghapus transaksi yang tidak memiliki **Customer ID**.
+- Menghapus **cancelled orders** (Invoice diawali dengan `C`).
+- Menghapus transaksi dengan **Quantity** atau **Price** yang tidak valid (≤ 0).
+- Menambahkan kolom **TotalPrice** sebagai nilai transaksi (`Quantity × Price`).
+
+---
 
 ### 2. Cohort Analysis
-- Mengelompokkan customer berdasarkan bulan transaksi pertama (*cohort month*)
-- Menghitung retention rate tiap cohort dari bulan ke bulan
-- Visualisasi heatmap retention untuk melihat pola drop-off
+
+Cohort Analysis digunakan untuk mengevaluasi **customer retention** dengan mengelompokkan pelanggan berdasarkan bulan pembelian pertama (*Cohort Month*).
+
+Tahapan yang dilakukan:
+
+- Menentukan **Cohort Month** untuk setiap pelanggan.
+- Menghitung **Cohort Index** (jumlah bulan sejak pembelian pertama).
+- Menghitung jumlah pelanggan aktif pada setiap cohort.
+- Menghitung **Retention Rate (%)** untuk setiap bulan.
+- Memvisualisasikan hasil menggunakan **Retention Heatmap** untuk melihat pola retensi pelanggan dari waktu ke waktu.
 
 ### 3. RFM Segmentation
 
