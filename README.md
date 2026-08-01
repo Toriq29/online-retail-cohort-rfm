@@ -49,7 +49,6 @@ Tahap awal dilakukan untuk memastikan kualitas data sebelum proses analisis.
 - Menghapus transaksi dengan **Quantity** atau **Price** yang tidak valid (≤ 0).
 - Menambahkan kolom **TotalPrice** sebagai nilai transaksi (`Quantity × Price`).
 
----
 
 ### 2. Cohort Analysis
 
